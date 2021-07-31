@@ -1,0 +1,125 @@
+* {
+    font-family: cursive;
+    color: #ffffff;
+}
+
+body {
+    background-image: radial-gradient(circle, #a88551, #8e6e40, #745730, #5c4220, #442e11);
+}
+
+#container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 10px 10px;
+}
+
+.name-child {
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 6em;
+    flex-basis: auto;
+}
+
+#neslon-img {
+    padding: 0px;
+    margin: 30px 0px 30px 0px;
+    width: 550px;
+    height: 400px;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+#achivement {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 4em;
+    flex-basis: auto;
+    align-self: flex-start;
+}
+
+#gallery {
+    width: 100%;
+}
+
+.sub-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 1100px) {
+    .sub-gallery:nth-child(2n+1) {
+        flex-flow: row nowrap;
+    }
+    .sub-gallery:nth-child(2n) {
+        flex-flow: row-reverse nowrap;
+    }
+}
+
+@media (max-width: 1099px) {
+    .sub-gallery {
+        flex-flow: column-reverse nowrap;
+    }
+
+    #quote > p:nth-child(1) {
+        padding: 0;
+    }
+    #quote > p:nth-child(2) {
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+.sub-gallery > div:nth-child(1) {
+    background-color: #C69F66;
+    flex: 3;
+}
+
+.sub-gallery > div:nth-child(2) {
+    background-color: #B08752;
+    flex: 1;
+}
+
+.gallery-items{
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+.gallery-items > p {
+    font-size: 2em;
+    font-family: cursive;
+}
+
+#quote{
+    margin: 10px;
+    padding: 50px;
+    height: 100px;
+    font-size: 1.7em;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+#quote > p:nth-child(1) {
+    font-family: 'Satisfy', cursive;
+}
+
+#quote > p:nth-child(2) {
+    align-self: flex-end;
+    font-family: cursive;
+}
