@@ -76,7 +76,6 @@ body {
 
 .gallery-items > p {
     font-size: 2em;
-    font-family: cursive;
 }
 
 #quote{
@@ -99,7 +98,6 @@ body {
 
 #quote > p:nth-child(2) {
     align-self: flex-end;
-    font-family: cursive;
 }
 
 @media (min-width: 1100px) {
