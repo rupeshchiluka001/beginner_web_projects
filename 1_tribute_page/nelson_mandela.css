@@ -115,14 +115,13 @@ body {
         flex-flow: column-reverse nowrap;
     }
 
-    #nelson-img {
-        width: 100%;
-        height: auto;
-    }
-
     @media (max-width: 899px) {
         * {
-            font-family: 'Dosis', sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
+        #achivement {
+            align-self: inherit;
+        }
+
     }
 }
