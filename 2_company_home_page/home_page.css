@@ -1,0 +1,21 @@
+body {
+    margin: 10px 0 0 0;
+    background-color: #f5d5aa;
+}
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: aqua;
+    overflow-x: auto;
+    padding: 0 10vw;
+}
+
+.container > div {
+    min-width: 200px;
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    flex: 0 0 auto;
+}
