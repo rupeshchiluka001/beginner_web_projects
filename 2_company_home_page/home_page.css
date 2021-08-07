@@ -1,22 +1,174 @@
 body {
-    margin: 10px 0 0 0;
-    background-color: #f5d5aa;
+    margin: 0;
+    font-size: 25px;
 }
-.container {
+
+#navbar {
     display: flex;
     flex-flow: row nowrap;
-    background-color: aqua;
-    overflow-x: auto;
+    justify-content: space-between;
+    margin: 5px 15px 5px 0px;
+}
+
+#logo {
+    margin: 0 15px;
+    border-radius: 10px;
+    align-self: center;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+#logo:hover {
+    color: #0062ff;
+}
+
+#navbar-icons {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+}
+
+#navbar-icons > *{
+    cursor: pointer;
+    padding: 0 0 0 15px;
+    align-self: center;
+}
+
+#navbar-icons > span:hover{
+    color: #0062ff;
+}
+
+#search {
+    padding: 0;
+    font-size: 0;
+}
+
+#search-box {
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: 2px solid black;
+    font-weight:600;
+}
+
+#search:hover {
+    border: 2px solid #0062ff;
+    color: #0062ff;
+}
+
+#search:hover #search-box{
+    border: 0;
+    color: #0062ff;
+}
+
+#search:hover #search-icon {
+    color: #0062ff;
+}
+
+#search-box:focus{
+    border: 0;
+    border-bottom: 2px solid #0062ff;
+    color: #0062ff;
+}
+
+#search-icon {
+    padding: 10px 5px;
+    transform: translateY(12%);
+}
+
+#container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    border: 1px solid black;
+    width: 99%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#about {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+#about-img {
+    width: 400px;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 10px 0 10px 20px;
+}
+
+#about-description {
+    margin: 10px 20px;
+}
+
+#specialities {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.fields {
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+#reviews-container {
+    width: 90%;   
+}
+
+#reviews {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
 }
 
-.container > div {
-    min-width: 200px;
-    min-height: 200px;
-    padding: 10px;
+.user {
+    margin: 40px;
+    min-width: 350px;
+    min-height: 400px;
+    text-align: center;
     border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px 20px;
-    flex: 0 0 auto;
     scroll-snap-align: center;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+#contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-logos {
+    transform: translateY(2px);
 }
