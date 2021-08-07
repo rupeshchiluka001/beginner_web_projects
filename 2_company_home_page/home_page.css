@@ -7,7 +7,7 @@ body {
     flex-flow: row nowrap;
     background-color: aqua;
     overflow-x: auto;
-    padding: 0 10vw;
+    scroll-snap-type: x mandatory;
 }
 
 .container > div {
@@ -16,6 +16,7 @@ body {
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px 20px;
     flex: 0 0 auto;
+    scroll-snap-align: center;
 }
