@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-size: 25px;
+    font-family: 'Fira Code', monospace;
 }
 
 #navbar {
