@@ -10,10 +10,10 @@ reviews.addEventListener("scroll", function() {
     reviewLeft = reviews.getBoundingClientRect().left
     userRight = lastUser.getBoundingClientRect().right
     userLeft = firstUser.getBoundingClientRect().left
-    if (Math.abs(reviewRight-userRight) <= 50) {
+    if (reviewRight+10 >= userRight) {
         rightArrow.style.visibility = "hidden";
     }
-    else if (Math.abs(userLeft-reviewLeft) <= 50) {
+    else if (userLeft-10 >= reviewLeft) {
         leftArrow.style.visibility = "hidden";
     }
     else {
