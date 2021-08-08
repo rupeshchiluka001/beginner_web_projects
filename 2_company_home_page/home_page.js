@@ -1,17 +1,23 @@
-// searchBox = document.getElementById("search-box")
-// search = document.getElementById("search");
-// searchIcon = document.getElementById("search-icon");
-
-// searchBox.addEventListener("focus", function() {
-//     searchBox.style.color = "#0062ff";
-//     searchIcon.style.borderBottom = "1px solid #0062ff"
-//     searchIcon.style.color = "white";
-//     searchIcon.style.backgroundColor = "#0062ff";
-// })
-
-// searchBox.addEventListener("focusout", function() {
-//     searchBox.style.color = "#000000";
-//     searchIcon.style.borderBottom = "0"
-//     searchIcon.style.color = "black";
-//     searchIcon.style.backgroundColor = "white"
-// })
+users = document.getElementsByClassName('user');
+len = users.length;
+firstUser = users[0];
+lastUser = users[len-1];
+reviews = document.getElementById('reviews');
+leftArrow = document.getElementById('left-arrow');
+rightArrow = document.getElementById('right-arrow');
+reviews.addEventListener("scroll", function() {
+    reviewRight = reviews.getBoundingClientRect().right
+    reviewLeft = reviews.getBoundingClientRect().left
+    userRight = lastUser.getBoundingClientRect().right
+    userLeft = firstUser.getBoundingClientRect().left
+    if (Math.abs(reviewRight-userRight) <= 50) {
+        rightArrow.style.visibility = "hidden";
+    }
+    else if (Math.abs(userLeft-reviewLeft) <= 50) {
+        leftArrow.style.visibility = "hidden";
+    }
+    else {
+        leftArrow.style.visibility = "visible";
+        rightArrow.style.visibility = "visible";
+    }
+})
