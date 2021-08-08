@@ -1,6 +1,6 @@
-searchBox = document.getElementById("search-box")
-search = document.getElementById("search");
-searchIcon = document.getElementById("search-icon");
+// searchBox = document.getElementById("search-box")
+// search = document.getElementById("search");
+// searchIcon = document.getElementById("search-icon");
 
 // searchBox.addEventListener("focus", function() {
 //     searchBox.style.color = "#0062ff";

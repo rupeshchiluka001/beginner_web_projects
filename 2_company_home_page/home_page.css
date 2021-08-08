@@ -1,15 +1,26 @@
 body {
     margin: 0;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Fira Code', monospace;
+    background-color: #ecf8ff;
+}
+
+h3 {
+    font-size: 25px;
 }
 
 #navbar {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 5px 15px 5px 0px;
+    padding: 5px 15px 5px 0px;
+    box-shadow: 0 0 10px #0062ff, 0 0 5px #888888;
+    z-index: 100;
     width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
 }
 
 #logo {
@@ -60,7 +71,6 @@ body {
 #search-icon {
     color: black;
     padding: 10px 5px;
-    /* box-sizing: border-box; */
 }
 
 #search:hover {
@@ -86,7 +96,6 @@ body {
 #search-box:focus + #search-icon{
     color: #ffffff;
     background-color: #0062ff;
-    /* padding: 11px 5px; */
 }
 
 #container {
@@ -97,7 +106,6 @@ body {
 }
 
 #welcome {
-    border: 1px solid black;
     width: 100%;
     height: 400px;
     display: flex;
@@ -105,6 +113,9 @@ body {
     align-self: center;
     align-items: center;
     font-size: 40px;
+    background-color: #0d168b;
+    color: white;
+    font-weight: bold;
 }
 
 #about {
@@ -119,10 +130,24 @@ body {
     object-fit: cover;
     object-position: bottom;
     margin: 10px;
+    transform: translateY(5%);
 }
 
 #about-description {
     margin: 10px 20px;
+}
+
+#about-description > h2 {
+    color: #0d168b;
+    text-decoration: underline;
+    font-size: 40px;;
+}
+
+#container > h3 {
+    text-decoration: underline;
+    color: #0d168b;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #specialities {
@@ -131,19 +156,21 @@ body {
     justify-content: center;
     align-items: center;
     margin: 20px;
-    border: 1px solid black;
+    width: 100%;
+    background-color: #50b9ff;
 }
 
 .fields {
     width: 350px;
     height: 250px;
-    border: 1px solid black;
     margin: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     text-align: center;
+    color: white;
+    background-color: #0d168b;
 }
 
 #reviews-container {
@@ -163,7 +190,8 @@ body {
     min-width: 350px;
     min-height: 400px;
     text-align: center;
-    border: 1px solid black;
+    background-color: #00B9E6;
+    box-shadow: 0 0 5px #00B9E6;
     scroll-snap-align: center;
     font-size: 22px;
 }
@@ -173,14 +201,23 @@ body {
     margin: 10px auto;
 }
 
+.user-review {
+    padding: 0 0 10px 0;
+}
+
 footer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid black;
     font-size: 20px;
-    margin: 0 10px;
+    padding: 0 10px;
+    background-color: #0d168b;
+    color: white;
+}
+
+footer > h3 {
+    text-decoration: underline;
 }
 
 #contact {
@@ -227,5 +264,14 @@ footer {
 
     #navbar-icons {
         transform: translateY(35%);
+    }
+
+    #menu-icon {
+        scale: 1.5;
+        transform: translateX(-20%);
+    }
+
+    .user {
+        scale: 0.8;
     }
 }
