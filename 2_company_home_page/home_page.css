@@ -174,7 +174,16 @@ h3 {
 }
 
 #reviews-container {
-    width: 90%;   
+    width: 80%;   
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-arrow, #right-arrow {
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 #reviews {
@@ -182,6 +191,7 @@ h3 {
     flex-flow: row nowrap;
     justify-content: flex-start;
     overflow-x: scroll;
+    overscroll-behavior-x: auto;
     scroll-snap-type: x mandatory;
 }
 
