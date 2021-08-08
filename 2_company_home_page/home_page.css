@@ -209,5 +209,16 @@ footer {
     #search {
         visibility: collapse;
     }
+
+    #navbar {
+        display: inline;    
+    }
+
+    #logo {
+        float: left;
+    }
+
+    #navbar-icons {
+        transform: translateY(35%);
+    }
 }
-/* @media (max-width: 649px) {} */
