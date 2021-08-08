@@ -165,6 +165,12 @@ body {
     text-align: center;
     border: 1px solid black;
     scroll-snap-align: center;
+    font-size: 22px;
+}
+
+.user-photo {
+    width: 290px;
+    margin: 10px auto;
 }
 
 footer {
