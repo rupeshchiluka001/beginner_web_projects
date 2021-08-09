@@ -7,6 +7,7 @@ body {
     font-size: 22px;
     font-family: 'Fira Code', monospace;
     background-color: #ecf8ff;
+    overflow: hidden;
 }
 
 h3 {
@@ -125,7 +126,7 @@ h3 {
     box-shadow: 0 0 10px #0062ff, 0 0 5px #888888;
     box-sizing: border-box;
     overflow: hidden;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 #mobile-hide > * {
