@@ -45,5 +45,12 @@ rightArrow.addEventListener("click", function() {
 
 let mobileHide = document.getElementById('mobile-hide');
 let menuIcon = document.getElementById('menu-icon');
+let closeButton = document.getElementById('close');
+
+closeButton.addEventListener("click", function() {
+    mobileHide.style.visibility = "hidden";
+});
+
 menuIcon.addEventListener("click", function() {
+    mobileHide.style.visibility = "visible";
 });

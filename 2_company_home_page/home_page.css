@@ -43,20 +43,20 @@ h3 {
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
 }
 
-#navbar-icons > *{
+#navbar-icons > * {
     cursor: pointer;
     padding: 0 0 0 15px;
-    align-self: center;
 }
 
-#navbar-icons > span:hover{
+#navbar-icons > span:hover {
     color: #0062ff;
 }
 
-#search {
+#search, #search-2 {
     padding: 0;
     font-size: 0;
     display: flex;
@@ -64,7 +64,7 @@ h3 {
     align-items: center;
 }
 
-#search-box {
+#search-box, #search-box-2 {
     padding: 10px;
     font-size: 17px;
     outline: none;
@@ -72,32 +72,32 @@ h3 {
     font-weight:600;
 }
 
-#search-icon {
+#search-icon, #search-icon-2 {
     color: black;
     padding: 10px 5px;
 }
 
-#search:hover {
+#search:hover, #search-2:hover {
     border: 2px solid #0062ff;
     color: #0062ff;
 }
 
-#search:hover #search-box{
+#search:hover #search-box, #search-2:hover #search-box-2{
     border: 0;
     color: #0062ff;
 }
 
-#search:hover #search-icon {
+#search:hover #search-icon, #search-2:hover #search-icon-2 {
     color: #ffffff;
     background-color: #0062ff;
 }
 
-#search-box:focus {
+#search-box:focus, #search-box-2:focus {
     border: 2px solid #0062ff;
     color: #0062ff;
 }
 
-#search-box:focus + #search-icon{
+#search-box:focus + #search-icon, #search-box-2:focus + #search-icon-2 {
     color: #ffffff;
     background-color: #0062ff;
 }
@@ -107,6 +107,46 @@ h3 {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+}
+
+#mobile-hide {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-image: radial-gradient(circle, #d6e6ff, #bbd5ff, #a1c5ff, #86b4ff, #69a3ff);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #0062ff, 0 0 5px #888888;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* visibility: hidden; */
+}
+
+#mobile-hide > * {
+    margin: 10px;
+}
+
+#user-account-2 {
+    transform: translateY(25%);
+}
+
+#mobile-hide > *:hover {
+    color: #0062ff;
+    cursor: pointer;
+}
+
+#close {
+    font-size: 40px;
+}
+
+#close:hover {
+    text-decoration: underline 2px;
 }
 
 #welcome {
