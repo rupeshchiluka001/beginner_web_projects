@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-size: 22px;
@@ -184,6 +188,7 @@ h3 {
 #left-arrow, #right-arrow {
     font-weight: bolder;
     font-size: 40px;
+    cursor: pointer;
 }
 
 #right-arrow {
@@ -197,6 +202,7 @@ h3 {
     overflow-x: scroll;
     overscroll-behavior-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .user {

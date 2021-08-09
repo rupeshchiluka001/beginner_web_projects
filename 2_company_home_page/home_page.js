@@ -1,15 +1,22 @@
-users = document.getElementsByClassName('user');
-len = users.length;
-firstUser = users[0];
-lastUser = users[len-1];
-reviews = document.getElementById('reviews');
-leftArrow = document.getElementById('left-arrow');
-rightArrow = document.getElementById('right-arrow');
+let users = document.getElementsByClassName('user');
+let len = users.length;
+
+let firstUser = users[0];
+let lastUser = users[len-1];
+
+let userWidth = firstUser.offsetWidth;
+
+let reviews = document.getElementById('reviews');
+
+
+let leftArrow = document.getElementById('left-arrow');
+let rightArrow = document.getElementById('right-arrow');
+
 reviews.addEventListener("scroll", function() {
-    reviewRight = reviews.getBoundingClientRect().right
-    reviewLeft = reviews.getBoundingClientRect().left
-    userRight = lastUser.getBoundingClientRect().right
-    userLeft = firstUser.getBoundingClientRect().left
+    let reviewRight = reviews.getBoundingClientRect().right
+    let reviewLeft = reviews.getBoundingClientRect().left
+    let userRight = lastUser.getBoundingClientRect().right
+    let userLeft = firstUser.getBoundingClientRect().left
     if (reviewRight >= userRight) {
         rightArrow.style.visibility = "hidden";
     }
@@ -20,4 +27,23 @@ reviews.addEventListener("scroll", function() {
         leftArrow.style.visibility = "visible";
         rightArrow.style.visibility = "visible";
     }
-})
+});
+
+let userReviews = document.getElementsByClassName('user-review');
+for (let i = 0; i < len; i++) {
+    userReviews[i].innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "+
+            "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+}
+
+leftArrow.addEventListener("click", function() {
+    reviews.scrollLeft -= userWidth;
+});
+
+rightArrow.addEventListener("click", function() {
+    reviews.scrollLeft += userWidth;
+});
+
+let mobileHide = document.getElementById('mobile-hide');
+let menuIcon = document.getElementById('menu-icon');
+menuIcon.addEventListener("click", function() {
+});
