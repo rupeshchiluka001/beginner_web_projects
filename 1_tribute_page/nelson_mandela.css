@@ -1,11 +1,13 @@
 * {
     font-family: cursive;
     color: #ffffff;
+    margin: 0;
 }
 
 body {
     background-image: radial-gradient(circle, #a88551, #8e6e40, #745730, #5c4220, #442e11);
     overflow-x: hidden;
+    width: 100%;
 }
 
 #container {
@@ -13,21 +15,22 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 30px 10px 10px 10px;
 }
 
 .name-child {
     color: #ffffff;
     text-align: center;
-    padding: 5px;
+    margin: 5px;
     font-size: 6em;
     flex-basis: auto;
+    text-shadow: 0 0 8px #C69F66;
+    text-decoration: 2px underline;
 }
 
 #neslon-img {
     padding: 0px;
     margin: 30px 0px 30px 0px;
-    width: 50%;
+    width: 60%;
     min-width: 400px;
     height: auto;
     box-shadow: 0px 0px 10px #888888;
@@ -40,6 +43,8 @@ body {
     font-size: 4em;
     flex-basis: auto;
     align-self: flex-start;
+    text-shadow: 0 0 8px #C69F66;
+    text-decoration: 2px underline;
 }
 
 #gallery {
@@ -112,14 +117,15 @@ body {
 }
 
 @media (max-width: 1099px) {
+    #gallery *{
+        font-family: 'STIX Two Text', serif;
+    }
+
     .sub-gallery {
         flex-flow: column-reverse nowrap;
     }
 
     @media (max-width: 899px) {
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-        }
         #achivement {
             align-self: inherit;
         }
