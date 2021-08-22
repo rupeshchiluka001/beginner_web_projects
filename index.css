@@ -29,19 +29,14 @@ body {
     margin: 10px;
     text-align: center;
     font-size: 25px;
-    position: relative;
     transition: transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card:hover {
     box-shadow: 0 0 8px #845EC2;
     text-shadow: 0 0 5px #845EC2;
     transform: scale(1.02);
-}
-
-.card > p {
-    position: absolute;
-    padding: 7px;
-    top: 50%;
-    transform: translateY(-60%);
 }
